@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <ImageView
@@ -18,12 +18,14 @@
             android:layout_height="100dp"
             android:adjustViewBounds="false"
             android:cropToPadding="false"
+            android:layout_gravity="center_horizontal"
             tools:srcCompat="@drawable/ic_logo_00" />
 
         <TextView
             android:id="@+id/titleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:text="Soccer Team Manager" />
 
         <Space
@@ -32,7 +34,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -40,6 +42,7 @@
                 android:id="@+id/teamNameField"
                 android:layout_width="240dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:ems="10"
                 android:hint="(Please enter a team name)"
                 android:inputType="textPersonName" />
@@ -48,6 +51,7 @@
                 android:id="@+id/teamNameTextField"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:text="Team Name" />
 
         </LinearLayout>
@@ -58,7 +62,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
             tools:layout_editor_absoluteY="511dp">
@@ -69,12 +73,14 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="(Please enter a postal code)"
+                android:layout_gravity="center_horizontal"
                 android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/teamAddressTextField"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:text="Team Address" />
         </LinearLayout>
 
@@ -86,7 +92,8 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OPEN IN GOOGLE MAPS" />
+            android:text="OPEN IN GOOGLE MAPS"
+            android:layout_gravity="center_horizontal"/>
 
     </LinearLayout>
 
