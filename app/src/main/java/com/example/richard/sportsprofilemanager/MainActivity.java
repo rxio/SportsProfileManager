@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void OnOpenInGoogleMaps (View view) {
+    public void OnOpenInGoogleMaps(View view) {
 
         EditText teamAddress = (EditText) findViewById(R.id.teamAddressField);
 
@@ -30,9 +30,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(mapIntent);
     }
 
-    public void OnSetAvatarButton (View view) {
-
-        Intent intent = new Intent(getApplicationContext(),ProfileActivity.class );
+    public void OnSetAvatarButton(View view) {
+        Intent intent = new Intent(getApplicationContext(),ProfileActivity.class);
         startActivityForResult(intent,0);
     }
 
