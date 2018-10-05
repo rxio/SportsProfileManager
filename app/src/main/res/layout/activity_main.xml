@@ -19,7 +19,8 @@
             android:adjustViewBounds="false"
             android:cropToPadding="false"
             android:layout_gravity="center_horizontal"
-            tools:srcCompat="@drawable/ic_logo_00" />
+            tools:srcCompat="@drawable/ic_logo_00"
+            android:onClick="OnSetAvatarButton" />
 
         <TextView
             android:id="@+id/titleTextView"
